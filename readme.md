@@ -140,7 +140,7 @@ On all platforms (Linux, Windows 7 or greater, and MAC OS X), we recommend a pre
    ```
 
 
-6. Check if PySIT has been successfully installed. Please open a python by
+6. Check if PySIT has been successfully installed. First leave the PySIT source directory and open python
 
    ```sh
    $ python

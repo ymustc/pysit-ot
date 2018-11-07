@@ -72,7 +72,13 @@ On all platforms (Linux, Windows 7 or greater, and MAC OS X), we recommend a pre
 
 ### Step 2: Create a Python2 virtual environment under Miniconda3 and install petsc4py
 
-1. Install necessary external softwares including [PETSC] and [MUMPS]. Assume that you clone or download the PySIT package at directory `/PATHTOPYSIT`. First go to the directory by executing the following command:
+1. Create the Python2 environment and activate it
+   ```sh
+   $ conda create -n py27 python=2.7 numpy
+   $ source activate py27
+   ```
+
+2. Install necessary external softwares including [PETSC] and [MUMPS]. Assume that you clone or download the PySIT package at directory `/PATHTOPYSIT`. First go to the directory by executing the following command:
 
     ```sh
     $ cd /PATHTOPYSIT

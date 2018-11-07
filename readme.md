@@ -1,5 +1,8 @@
 # Installation
 
+This proceduure has been tested on:
+- OSX 10.14 with python 3.7.0 and python 2.7.15, both installed with installed with Miniconda3.
+- Ubuntu 16.04 with python 3.6.6 and python 20.7.15, both installed with Miniconda2.
 ## Dependencies
 
 PySIT has the following dependencies
@@ -49,7 +52,7 @@ On all platforms (Linux, Windows 7 or greater, and MAC OS X), we recommend a pre
     $ source ./Miniconda3-latest-MacOSX-x86_64.sh
     ```
 
-    and executing the following command for Linux useres:
+    and executing the following command for Linux users:
 
     ```sh
     $ source ./Miniconda3-latest-Linux-x86_64.sh
@@ -67,7 +70,28 @@ On all platforms (Linux, Windows 7 or greater, and MAC OS X), we recommend a pre
     $ /YOURHOMEDIRECTORY/miniconda3/bin/conda
     ```
 
-### Step 2: Create a Python3 virtual environment by Miniconda3 and install PySIT
+### Step 2: Create a Python2 virtual environment under Miniconda3 and install petsc4py
+
+1. Install necessary external softwares including [PETSC] and [MUMPS]. Assume that you clone or download the PySIT package at directory `/PATHTOPYSIT`. First go to the directory by executing the following command:
+
+    ```sh
+    $ cd /PATHTOPYSIT
+    ```
+
+    Then, execute the following commands to install PETSC and MUMPS. For linux users please use:
+
+    ```sh
+    $ source ./install_petsc4py_linux.sh
+    ```
+
+    For MAC OS users:
+
+    ```sh
+    $ source ./install_petsc4py_OSx.sh
+
+    ```
+
+### Step 3: Create a Python3 virtual environment under Miniconda3 and install ObsPy abd PySIT
 
 1. Create a Python3 virtual environment named with `myenv` with necessary packages by excuting the following command
 
@@ -95,25 +119,6 @@ On all platforms (Linux, Windows 7 or greater, and MAC OS X), we recommend a pre
 
     ```sh
     $ pip install obspy
-    ```
-
-4. Install necessary external softwares including [PETSC] and [MUMPS]. Assume that you clone or download the PySIT package at directory `/PATHTOPYSIT`. First go to the directory by executing the following command:
-
-    ```sh
-    $ cd /PATHTOPYSIT
-    ```
-
-    Then, execute the following commands to install PETSC and MUMPS. For linux users please use:
-
-    ```sh
-    $ source ./install_petsc4py_linux.sh
-    ```
-
-    For MAC OS users:
-
-    ```sh
-    $ source ./install_petsc4py_OSx.sh
-
     ```
 
 5. Install the PySIT toolbox. First, make sure that you are in the PySIT directory by executing the following command:

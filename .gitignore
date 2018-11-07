@@ -37,6 +37,7 @@ sdist
 develop-eggs
 .installed.cfg
 setuptools-*.tar.gz
+petsc*
 
 # Other
 .cache

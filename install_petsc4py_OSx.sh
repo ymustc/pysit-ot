@@ -159,7 +159,7 @@ export PATH=$PETSC_DIR/$PETSC_ARCH/bin:$PATH
 export PATH=$PETSC_DIR/$PETSC_ARCH/lib:$PATH
 export PATH=$PETSC_DIR/$PETSC_ARCH/include:$PATH
 #we have to reinstall mpi4py it will use the lastest version of mpi installed by PETSc
-pip uninstall mpi4py
+pip uninstall -y mpi4py
 pip install mpi4py
 echo "Installing petsc4py"
 cd ..
